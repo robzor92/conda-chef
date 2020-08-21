@@ -56,7 +56,7 @@ default['hops']['group_id']                       = 1234
 
 ############################ END GLOBAL ATTRIBUTES #######################################
 
-default['conda']['version']                       = "2020.07"
+default['conda']['version']                       = "py37_4.8.3"
 # the version of python: either '2' or '3'
 default['conda']['python']                        = "3"
 default['conda']['beam']['version']               = "2.19.0"
@@ -70,7 +70,7 @@ default["conda"]["hops-util-py"]["minor"]         = "0"
 # last digit is the bugfix version, assuming a version format of X.X.X.X
 default["conda"]["hops-util-py"]["version"]       = node["install"]["version"] + "." + node["conda"]["hops-util-py"]["minor"]
 
-default['conda']['url']                           = node['download_url'] + "/Anaconda#{node['conda']['python']}-#{node['conda']['version']}-Linux-x86_64.sh"
+default['conda']['url']                           = node['download_url'] + "/Miniconda#{node['conda']['python']}-#{node['conda']['version']}-Linux-x86_64.sh"
 
 default['conda']['user']                          = node['install']['user'].empty? ? 'anaconda' : node['install']['user']
 default['conda']['group']                         = node['install']['user'].empty? ? 'anaconda' : node['install']['user']

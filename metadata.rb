@@ -129,10 +129,6 @@ attribute "conda/proxy/https",
           :description => "Proxy configuration for conda (https)",
           :type => "string"
 
-attribute "conda/default_libs",
-          :description => "Space separated list of libraries to be installed in Conda root environment",
-          :type => "string"
-
 attribute "pypi/proxy",
           :description => "HTTP proxy for fetching libraries from PyPI",
           :type => "string"
